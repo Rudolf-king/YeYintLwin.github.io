@@ -2347,102 +2347,815 @@
 
         <!-- CYBERSECURITY PRACTICE -->
 
-        <article class="exp reveal">
 
-          <div class="exp-top">
+<article class="exp reveal">
 
-            <div>
+  <div class="exp-top">
 
-              <div class="role">
-                Cybersecurity Practice
-              </div>
+    <div>
+      <div class="role">
+        Cybersecurity Practice
+      </div>
 
-              <div class="company">
-                Hack The Box • TryHackMe • Security Labs
-              </div>
+      <div class="company">
+        Hack The Box
+      </div>
+    </div>
 
-            </div>
+    <div class="date">
+      Ongoing
+    </div>
 
-            <div class="date">
-              Ongoing
-            </div>
-
-          </div>
-
-
-          <div class="exp-layout">
-
-            <div class="exp-img">
-
-              <img
-                src="security-lab.jpg"
-                alt="Cybersecurity lab practice"
-                onerror="
-                  this.style.display='none';
-                  this.nextElementSibling.style.display='grid';
-                "
-              />
-
-              <div
-                class="placeholder"
-                style="display: none;"
-              >
-                Add your HTB / TryHackMe screenshot
-                <br />
-                <b>security-lab.jpg</b>
-              </div>
-
-            </div>
+  </div>
 
 
-            <div>
+  <div class="exp-layout">
 
-              <p>
-                Building practical cybersecurity skills through
-                hands-on labs and security-focused learning
-                environments.
-              </p>
+    <!-- Security Lab Image -->
+    <div class="exp-img">
 
-              <ul>
+      <img
+        src="htb.jpg"
+        alt="Cybersecurity lab practice"
+        onerror="
+          this.style.display='none';
+          this.nextElementSibling.style.display='grid';
+        "
+      />
 
-                <li>
-                  Reconnaissance and vulnerability identification.
-                </li>
+      <div
+        class="placeholder"
+        style="display: none;"
+      >
+        Add your HTB / TryHackMe screenshot
+        <br />
+        <b>security-lab.jpg</b>
+      </div>
 
-                <li>
-                  Web application security and penetration testing practice.
-                </li>
-
-                <li>
-                  Linux security and privilege escalation labs.
-                </li>
-
-                <li>
-                  Network traffic analysis and security monitoring.
-                </li>
-
-                <li>
-                  Security tooling with Nmap, Burp Suite,
-                  Wireshark and Wazuh.
-                </li>
-
-              </ul>
+    </div>
 
 
-              <div class="tags">
+    <!-- Experience Content -->
+    <div>
 
-                <span class="tag">Pentest</span>
-                <span class="tag">Web Security</span>
-                <span class="tag">Linux</span>
-                <span class="tag">SOC</span>
+      <p>
+        Building practical cybersecurity skills through
+        hands-on labs and security-focused learning
+        environments.
+      </p>
 
-              </div>
 
-            </div>
+      <ul>
 
-          </div>
+        <li>
+          Reconnaissance and vulnerability identification.
+        </li>
 
-        </article>
+        <li>
+          Web application security and penetration testing practice.
+        </li>
+
+        <li>
+          Linux security and privilege escalation labs.
+        </li>
+
+        <li>
+          Network traffic analysis and security monitoring.
+        </li>
+
+        <li>
+          Security tooling with Nmap, Burp Suite,
+          Wireshark and Wazuh.
+        </li>
+
+      </ul>
+
+
+      <!-- Skills / Tags -->
+      <div class="tags">
+
+        <span class="tag">
+          Pentest
+        </span>
+
+        <span class="tag">
+          Web Security
+        </span>
+
+        <span class="tag">
+          Linux
+        </span>
+
+        <span class="tag">
+          SOC
+        </span>
+
+      </div>
+
+
+      <!-- View Credentials Button -->
+      <div class="credential-action">
+
+        <a
+          class="credential-btn"
+          href="https://profile.hackthebox.com/profile/019c409d-7952-7299-8ad1-c92eb21a61ac?utm_medium=copy_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <i class="fa-solid fa-shield-halved"></i>
+
+          <span>
+            View Credentials
+          </span>
+
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+<style>
+
+/* =========================================
+   EXPERIENCE CARD
+========================================= */
+
+.exp {
+  padding: 30px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid var(--line);
+
+  border-radius: 24px;
+
+  background: rgba(9, 23, 26, 0.78);
+
+  box-shadow:
+    0 18px 60px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Left Accent Line */
+
+.exp::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 3px;
+
+  background: linear-gradient(
+    var(--a),
+    transparent
+  );
+}
+
+
+/* =========================================
+   EXPERIENCE HEADER
+========================================= */
+
+.exp-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+}
+
+
+.role {
+  font-size: 27px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+.company {
+  margin-top: 7px;
+
+  color: var(--a);
+
+  font-weight: 700;
+
+  font-size: 14px;
+}
+
+
+.date {
+  color: #6e898a;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   EXPERIENCE LAYOUT
+========================================= */
+
+.exp-layout {
+  display: grid;
+
+  grid-template-columns: 235px 1fr;
+
+  gap: 28px;
+
+  align-items: start;
+}
+
+
+/* =========================================
+   EXPERIENCE IMAGE
+========================================= */
+
+.exp-img {
+  width: 100%;
+
+  height: 205px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  border: 1px solid var(--line);
+
+  background: #0c2024;
+}
+
+
+.exp-img img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+
+.exp-img:hover img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   IMAGE PLACEHOLDER
+========================================= */
+
+.placeholder {
+  width: 100%;
+
+  height: 100%;
+
+  display: grid;
+
+  place-items: center;
+
+  text-align: center;
+
+  padding: 20px;
+
+  color: #769395;
+
+  background:
+    linear-gradient(
+      145deg,
+      #15353a,
+      #071214
+    );
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+.placeholder b {
+  color: var(--a);
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   EXPERIENCE DESCRIPTION
+========================================= */
+
+.exp p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   EXPERIENCE LIST
+========================================= */
+
+.exp ul {
+  margin-top: 15px;
+
+  padding-left: 19px;
+
+  color: #9bb3b4;
+}
+
+
+.exp li {
+  margin: 7px 0;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+.exp li::marker {
+  color: var(--a);
+}
+
+
+/* =========================================
+   TAGS
+========================================= */
+
+.tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 18px;
+}
+
+
+.tag {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 10px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 999px;
+
+  color: #8ea9aa;
+
+  background: rgba(73, 225, 209, 0.02);
+
+  font-size: 11px;
+
+  transition: all 0.25s ease;
+}
+
+
+.tag:hover {
+  color: var(--a);
+
+  border-color: var(--a);
+
+  background: rgba(73, 225, 209, 0.06);
+}
+
+
+/* =========================================
+   CREDENTIAL BUTTON
+========================================= */
+
+.credential-action {
+  margin-top: 22px;
+}
+
+
+.credential-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 11px 16px;
+
+  border: 1px solid rgba(
+    73,
+    225,
+    209,
+    0.28
+  );
+
+  border-radius: 12px;
+
+  background: rgba(
+    73,
+    225,
+    209,
+    0.05
+  );
+
+  color: var(--a);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.credential-btn i:first-child {
+  font-size: 15px;
+}
+
+
+.credential-btn i:last-child {
+  font-size: 11px;
+
+  opacity: 0.7;
+}
+
+
+.credential-btn:hover {
+  background: var(--a);
+
+  color: #052326;
+
+  border-color: var(--a);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 30px
+    rgba(73, 225, 209, 0.15);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .exp-layout {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+
+  .exp-img {
+    height: 240px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 620px) {
+
+  .exp {
+    padding: 22px;
+  }
+
+
+  .exp-top {
+    display: block;
+  }
+
+
+  .role {
+    font-size: 23px;
+  }
+
+
+  .company {
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+
+
+  .date {
+    margin-top: 7px;
+  }
+
+
+  .exp-img {
+    height: 210px;
+  }
+
+
+  .exp p {
+    font-size: 13px;
+  }
+
+
+  .exp li {
+    font-size: 13px;
+  }
+
+
+  .credential-btn {
+    width: 100%;
+  }
+
+}
+
+</style>
+
+<!-- Try Hack Me lab about-->
+<article class="exp reveal">
+
+  <div class="exp-top">
+
+    <div>
+      <div class="role">
+        Cybersecurity Practice
+      </div>
+
+      <div class="company">
+        Try Hack me
+      </div>
+    </div>
+
+    <div class="date">
+      Ongoing
+    </div>
+
+  </div>
+
+
+  <div class="exp-layout">
+
+    <!-- Security Lab Image -->
+    <div class="exp-img">
+
+      <img
+        src="thm.jpg"
+        alt="Cybersecurity lab practice"
+        onerror="
+          this.style.display='none';
+          this.nextElementSibling.style.display='grid';
+        "
+      />
+
+      <div
+        class="placeholder"
+        style="display: none;"
+      >
+        Add your HTB / TryHackMe screenshot
+        <br />
+        <b>security-lab.jpg</b>
+      </div>
+
+    </div>
+
+
+    <!-- Experience Content -->
+    <div>
+
+      <p>
+        Developing cybersecurity knowledge through guided learning paths, practical rooms and hands-on security challenges on TryHackMe.
+      </p>
+
+
+      <ul>
+
+        <li>
+          Cybersecurity fundamentals and security concepts.
+        </li>
+
+        <li>
+          Network reconnaissance and enumeration.
+        </li>
+
+        <li>
+          Web application security and vulnerability analysis.
+        </li>
+
+        <li>
+          Linux fundamentals and privilege escalation practice.
+        </li>
+
+        <li>
+          Security monitoring, SOC concepts and threat detection.
+        </li>
+
+      </ul>
+
+
+      <!-- Skills / Tags -->
+      <div class="tags">
+
+        <span class="tag">
+          SOC
+        </span>
+
+        <span class="tag">
+          Web Security
+        </span>
+
+        <span class="tag">
+          Linux
+        </span>
+      </div>
+
+
+      <!-- View Credentials Button -->
+      <div class="credential-action">
+
+        <a
+          class="credential-btn"
+          href="https://tryhackme.com/p/Rudolf1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <i class="fa-solid fa-shield-halved"></i>
+
+          <span>
+            View Credentials
+          </span>
+
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+<!-- Hackviser about-->
+  
+  <article class="exp reveal">
+
+    <div class="exp-top">
+
+      <div>
+        <div class="role">
+          Cybersecurity Practice
+        </div>
+
+        <div class="company">
+          Hackviser
+        </div>
+      </div>
+
+      <div class="date">
+        Ongoing
+      </div>
+
+    </div>
+
+
+    <div class="exp-layout">
+
+      <!-- Security Lab Image -->
+      <div class="exp-img">
+
+        <img
+          src="hackviser.jpg"
+          alt="Cybersecurity lab practice"
+          onerror="
+            this.style.display='none';
+            this.nextElementSibling.style.display='grid';
+          "
+        />
+
+        <div
+          class="placeholder"
+          style="display: none;"
+        >
+          Add your HTB / TryHackMe screenshot
+          <br />
+          <b>security-lab.jpg</b>
+        </div>
+
+      </div>
+
+
+      <!-- Experience Content -->
+      <div>
+
+        <p>
+          Practicing cybersecurity concepts through interactive challenges and hands-on security exercises on Hackviser.
+        </p>
+
+
+        <ul>
+
+          <li>
+            Security fundamentals and practical cybersecurity concepts.
+          </li>
+
+          <li>
+            Network and system security exercises..
+          </li>
+
+          <li>
+            Vulnerability identification and security analysis.
+          </li>
+
+          <li>
+            Hands-on security challenges and practical problem solving.
+          </li>
+
+          <li>
+            Applying cybersecurity knowledge through interactive labs.
+          </li>
+
+        </ul>
+
+
+        <!-- Skills / Tags -->
+        <div class="tags">
+
+          <span class="tag">
+            Security Labs
+          </span>
+
+          <span class="tag">
+            Networking
+          </span>
+
+          <span class="tag">
+            Vulnerability Analysis
+          </span>
+        </div>
+
+
+        <!-- View Credentials Button -->
+        <div class="credential-action">
+
+          <a
+            class="credential-btn"
+            href="https://app.hackviser.com/profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <span>
+              View Credentials
+            </span>
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </article>
 
       </div>
 
@@ -2982,7 +3695,7 @@
 
         <p>
           Interested in cybersecurity, penetration testing,
-          programming, AI or collaboration? Find me through
+          programming for AI or collaboration? Find me through
           the links below.
         </p>
 
@@ -2992,7 +3705,7 @@
           class="email"
           href="mailto:YOUR_EMAIL@example.com"
         >
-          YOUR_EMAIL@example.com
+          mbat3471@gmail.com
         </a>
 
 
@@ -3002,7 +3715,7 @@
 
           <a
             class="social contact-social"
-            href="https://github.com/YOUR_USERNAME"
+            href="https://github.com/Rudolf-king"
             target="_blank"
             rel="noopener"
           >
@@ -3028,7 +3741,7 @@
 
           <a
             class="social contact-social"
-            href="mailto:YOUR_EMAIL@example.com"
+            href="mbat3471@gmail.com"
           >
             <i class="fa-solid fa-envelope"></i>
             <span>Email</span>
